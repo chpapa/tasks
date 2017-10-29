@@ -31,7 +31,7 @@ project:
 
 repeat project:
 * name
-* * tasks
+* * repeat tasks (repeat-by=NULL)
 * ? repeat-by
 
 repeat tasks:
@@ -43,6 +43,19 @@ repeat tasks:
 time tag: name, time
 delegate: name
 checklist: name
+
+repeat-by:
+* Repeat in:
+  * N days/weeks/months/years after completion
+  * Every N days
+  * Every N weeks on Mon-Sun
+  * Every N months on 1st - 31st days of the month
+  * Every year on 1st-31st days of Jan-Dec
+* End after: date
+
+day-in-future:
+* N days after created
+* Next N Mon-Sun after created
 
 ## Command
 
